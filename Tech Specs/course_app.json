@@ -1,0 +1,117 @@
+{
+    "specVersion": "1.0",
+    "platform": "Learning Adventures",
+    "appType": "Single Course App",
+    "targetAudience": {
+      "ageRange": "8-13",
+      "gradeLevels": ["3", "4", "5", "6", "7"]
+    },
+    "courseModel": {
+      "structure": "one_app_per_course",
+      "totalLessons": 7,
+      "lessonOrder": "sequential",
+      "tier": "premium",
+      "progression": {
+        "unlockRule": "complete_previous_lesson",
+        "replayCompletedLessons": true
+      }
+    },
+    "lessonStructure": {
+      "requiredSections": [
+        "lessonIntro",
+        "instructionalContent",
+        "interactiveActivity",
+        "assessment"
+      ],
+      "lessonIntro": {
+        "includes": ["title", "learningObjectives", "narrativeContext"]
+      },
+      "instructionalContent": {
+        "format": "short_blocks",
+        "maxParagraphLength": "4_sentences",
+        "tone": "encouraging_and_curiosity_driven"
+      },
+      "interactiveActivity": {
+        "required": true,
+        "allowedTypes": [
+          "simulation",
+          "experiment",
+          "decision_story",
+          "builder",
+          "drag_and_drop",
+          "scenario_exploration"
+        ],
+        "retryAllowed": true,
+        "failurePenalty": "none"
+      },
+      "assessment": {
+        "required": true,
+        "allowedTypes": [
+          "short_quiz",
+          "reflection",
+          "scenario_check",
+          "completion_challenge"
+        ],
+        "questionCountRange": "3-5"
+      }
+    },
+    "xpSystem": {
+      "enabled": true,
+      "lessonXPRange": {
+        "min": 150,
+        "max": 250
+      },
+      "xpSources": [
+        "activity_completion",
+        "assessment_completion"
+      ],
+      "courseCompletionReward": {
+        "certificate": true,
+        "badge": true
+      }
+    },
+    "mentorAgent": {
+      "role": "supportive_guide",
+      "tone": [
+        "warm",
+        "encouraging",
+        "wise",
+        "age_appropriate"
+      ],
+      "behaviorRules": [
+        "ask_guiding_questions",
+        "avoid_direct_answers",
+        "normalize_mistakes",
+        "celebrate_effort"
+      ]
+    },
+    "sensitiveTopicsGuidelines": {
+      "topics": ["racism", "segregation", "inequality"],
+      "rules": [
+        "use_age_appropriate_language",
+        "avoid_graphic_detail",
+        "emphasize_resilience_and_progress",
+        "frame_honestly_with_hope"
+      ]
+    },
+    "stateTracking": {
+      "required": true,
+      "variables": [
+        "currentLesson",
+        "lessonsCompleted",
+        "xpEarned",
+        "courseCompleted"
+      ]
+    },
+    "externalDataContract": {
+      "onRequestOutputFormat": {
+        "courseId": "string",
+        "currentLesson": "number",
+        "lessonsCompleted": "number",
+        "totalLessons": 7,
+        "xpEarned": "number",
+        "courseCompleted": "boolean"
+      }
+    }
+  }
+  

@@ -1,0 +1,34 @@
+{
+  "id": "timeline-bus-boycott",
+  "title": "Montgomery Bus Boycott Timeline",
+  "events": [
+    {
+      "id": "evt-1955-12-01",
+      "date": "1955-12-01",
+      "title": "Rosa Parks Arrested",
+      "description": "Rosa Parks is arrested after refusing to give up her seat on a segregated Montgomery bus.",
+      "category": "trigger"
+    },
+    {
+      "id": "evt-1955-12-05",
+      "date": "1955-12-05",
+      "title": "Boycott Begins",
+      "description": "The Montgomery Bus Boycott officially begins and local leaders organize sustained action.",
+      "category": "mobilization"
+    },
+    {
+      "id": "evt-1956-02-24",
+      "date": "1956-02-24",
+      "title": "Indictments Against Boycott Leaders",
+      "description": "Dozens of leaders, including Martin Luther King Jr., are indicted under anti-boycott laws.",
+      "category": "legal"
+    },
+    {
+      "id": "evt-1956-12-21",
+      "date": "1956-12-21",
+      "title": "Integrated Buses in Montgomery",
+      "description": "After federal rulings, Montgomery's buses are integrated and the boycott ends.",
+      "category": "outcome"
+    }
+  ]
+}

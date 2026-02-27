@@ -1,0 +1,265 @@
+{
+    "course": {
+      "id": "gwc_science_history_001",
+      "title": "Seeds of Genius: George Washington Carver and the Power of Science",
+      "description": "An interactive science and history course exploring the life, experiments, and resilience of George Washington Carver.",
+      "subject": ["Science", "History"],
+      "gradeRange": "Grades 3–7",
+      "tier": "premium",
+      "totalXP": 1400,
+      "unlockRules": {
+        "requiresSubscription": true,
+        "prerequisites": []
+      },
+      "chapters": [
+        {
+          "id": "chapter_1",
+          "order": 1,
+          "title": "A Seed Is Planted",
+          "description": "Discover Carver’s early life and the power of curiosity.",
+          "lessons": [
+            {
+              "id": "lesson_1",
+              "order": 1,
+              "title": "A Seed Is Planted",
+              "learningObjectives": [
+                "Understand George Washington Carver’s early life",
+                "Explain why curiosity is essential to science"
+              ],
+              "xpReward": 150,
+              "contentBlocks": [
+                {
+                  "type": "story",
+                  "data": {
+                    "narrativeStyle": "guided",
+                    "text": "George Washington Carver was born into slavery, but his curiosity about nature shaped his future as a scientist."
+                  }
+                },
+                {
+                  "type": "image",
+                  "data": {
+                    "assetId": "gwc_childhood_illustration"
+                  }
+                }
+              ],
+              "activities": [
+                {
+                  "id": "activity_1_1",
+                  "type": "exploration_game",
+                  "title": "Curiosity Collector",
+                  "description": "Explore objects and ask scientific questions.",
+                  "xpReward": 75,
+                  "interactionModel": {
+                    "input": "click_and_select",
+                    "completionCriteria": "collect_5_questions"
+                  }
+                }
+              ],
+              "assessment": {
+                "id": "assessment_1",
+                "type": "quiz",
+                "passingScore": 70,
+                "xpReward": 75,
+                "questions": [
+                  {
+                    "id": "q1",
+                    "type": "multiple_choice",
+                    "prompt": "What helped George Washington Carver become a scientist?",
+                    "options": [
+                      "Curiosity",
+                      "Wealth",
+                      "Luck",
+                      "Fame"
+                    ],
+                    "correctAnswer": "Curiosity"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "chapter_2",
+          "order": 2,
+          "title": "Science Against the Odds",
+          "description": "Learn about racism, segregation, and perseverance.",
+          "lessons": [
+            {
+              "id": "lesson_2",
+              "order": 1,
+              "title": "Science Against the Odds",
+              "learningObjectives": [
+                "Describe barriers faced by Black scientists",
+                "Explain what perseverance means"
+              ],
+              "xpReward": 200,
+              "contentBlocks": [
+                {
+                  "type": "historical_context",
+                  "data": {
+                    "era": "Jim Crow South",
+                    "text": "Despite segregation and racism, Carver continued his education and scientific work."
+                  }
+                }
+              ],
+              "activities": [
+                {
+                  "id": "activity_2_1",
+                  "type": "branching_story",
+                  "title": "Choose the Path",
+                  "xpReward": 100,
+                  "interactionModel": {
+                    "choicesImpactOutcome": true
+                  }
+                }
+              ],
+              "assessment": {
+                "id": "assessment_2",
+                "type": "reflection",
+                "xpReward": 100,
+                "prompt": "How would you respond if someone told you that you could not learn because of who you are?"
+              }
+            }
+          ]
+        },
+        {
+          "id": "chapter_3",
+          "order": 3,
+          "title": "The Soil Speaks",
+          "lessons": [
+            {
+              "id": "lesson_3",
+              "order": 1,
+              "title": "The Soil Speaks",
+              "learningObjectives": [
+                "Explain why soil health matters",
+                "Observe patterns in nature"
+              ],
+              "xpReward": 200,
+              "activities": [
+                {
+                  "id": "activity_3_1",
+                  "type": "virtual_lab",
+                  "title": "Soil Lab",
+                  "xpReward": 120,
+                  "variables": ["crop_type", "nutrients", "rest_cycle"]
+                }
+              ],
+              "assessment": {
+                "id": "assessment_3",
+                "type": "diagram_labeling",
+                "xpReward": 80
+              }
+            }
+          ]
+        },
+        {
+          "id": "chapter_4",
+          "order": 4,
+          "title": "The Peanut Isn’t Just a Peanut",
+          "lessons": [
+            {
+              "id": "lesson_4",
+              "order": 1,
+              "title": "Innovation Through Experimentation",
+              "xpReward": 250,
+              "activities": [
+                {
+                  "id": "activity_4_1",
+                  "type": "invention_builder",
+                  "xpReward": 150,
+                  "allowedInputs": ["peanuts", "sweet_potatoes", "soybeans"]
+                }
+              ],
+              "assessment": {
+                "id": "assessment_4",
+                "type": "matching",
+                "xpReward": 100
+              }
+            }
+          ]
+        },
+        {
+          "id": "chapter_5",
+          "order": 5,
+          "title": "Science for the People",
+          "lessons": [
+            {
+              "id": "lesson_5",
+              "order": 1,
+              "title": "Science for the People",
+              "xpReward": 200,
+              "activities": [
+                {
+                  "id": "activity_5_1",
+                  "type": "simulation",
+                  "title": "Farm Helper",
+                  "xpReward": 120
+                }
+              ],
+              "assessment": {
+                "id": "assessment_5",
+                "type": "scenario_quiz",
+                "xpReward": 80
+              }
+            }
+          ]
+        },
+        {
+          "id": "chapter_6",
+          "order": 6,
+          "title": "A Scientist’s Method",
+          "lessons": [
+            {
+              "id": "lesson_6",
+              "order": 1,
+              "title": "How Experiments Work",
+              "xpReward": 200,
+              "activities": [
+                {
+                  "id": "activity_6_1",
+                  "type": "experiment_designer",
+                  "xpReward": 120
+                }
+              ],
+              "assessment": {
+                "id": "assessment_6",
+                "type": "sequence_ordering",
+                "xpReward": 80
+              }
+            }
+          ]
+        },
+        {
+          "id": "chapter_7",
+          "order": 7,
+          "title": "Your Turn to Plant the Seeds",
+          "lessons": [
+            {
+              "id": "lesson_7",
+              "order": 1,
+              "title": "Capstone Project",
+              "xpReward": 200,
+              "activities": [
+                {
+                  "id": "activity_7_1",
+                  "type": "capstone_project",
+                  "xpReward": 200,
+                  "submissionTypes": ["drawing", "writing", "experiment"]
+                }
+              ],
+              "assessment": {
+                "id": "assessment_7",
+                "type": "completion_check"
+              }
+            }
+          ]
+        }
+      ],
+      "completionRewards": {
+        "certificate": true,
+        "badge": "Seeds of Genius Graduate"
+      }
+    }
+  }
+  
