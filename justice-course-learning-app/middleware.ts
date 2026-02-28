@@ -1,18 +1,19 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const protectedPrefixes = ['/dashboard', '/assets', '/builder', '/timeline', '/sources'];
+const protectedPrefixes = ['/dashboard', '/learn', '/profile', '/instructor'];
 
 function hasSupabaseAuthCookie(request: NextRequest) {
   return request.cookies
     .getAll()
-    .some((cookie) => cookie.name.includes('-auth-token') || cookie.name.includes('sb-'));
+    .some((cookie) => cookie.name.includes('-auth-token') || cookie.name.startsWith('sb-'));
 }
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const isProtected = protectedPrefixes.some((prefix) => pathname.startsWith(prefix));
 
-  if (!protectedPrefixes.some((prefix) => pathname.startsWith(prefix))) {
+  if (!isProtected) {
     return NextResponse.next();
   }
 
@@ -26,5 +27,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/assets/:path*', '/builder/:path*', '/timeline/:path*', '/sources/:path*']
+  matcher: ['/dashboard/:path*', '/learn/:path*', '/profile/:path*', '/instructor/:path*']
 };
